@@ -8,13 +8,16 @@ import com.smartpasswordmanager.exception.UserNotFoundException;
 import com.smartpasswordmanager.repository.PasswordRepository;
 import com.smartpasswordmanager.repository.UserRepository;
 import lombok.Data;
+import org.antlr.v4.runtime.tree.Tree;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.TreeMap;
 
 @Service
 @Data
@@ -34,10 +37,15 @@ public class PasswordService {
         return password;
     }
 
-    public List<Password> getAllPasswordsByUserID(int user_id) throws Exception{
+    public TreeMap<Integer,Password> getAllPasswordsByUserID(int user_id) throws Exception{
         Optional<User> user =   userRepository.findById(user_id);
+        TreeMap<Integer,Password> passwordTreeMap = new TreeMap<>(Comparator.comparing(id->id));
         if (user.isPresent()){
-             return passwordRepository.findPasswordByUserId(user_id);
+             List<Password> passwordList = passwordRepository.findPasswordByUserId(user_id);
+             for(Password i:passwordList){
+                 passwordTreeMap.put(i.getPasswordId(),i);
+             }
+             return passwordTreeMap;
         }else{
             throw new UserNotFoundException("User Not Found!");
         }
