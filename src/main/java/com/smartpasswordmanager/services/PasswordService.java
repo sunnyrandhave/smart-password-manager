@@ -8,7 +8,6 @@ import com.smartpasswordmanager.exception.UserNotFoundException;
 import com.smartpasswordmanager.repository.PasswordRepository;
 import com.smartpasswordmanager.repository.UserRepository;
 import lombok.Data;
-import org.antlr.v4.runtime.tree.Tree;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -63,7 +62,6 @@ public class PasswordService {
 
     public String deletePassword(int passwordId) throws Exception{
         Optional<Password> passwordOptional = passwordRepository.findById(passwordId);
-//        Password password = passwordRepository.findPasswordById(passwordId);
         if (passwordOptional.isPresent()){
             String pwdName = passwordOptional.get().getWebsite();
             passwordRepository.delete(passwordOptional.get());
