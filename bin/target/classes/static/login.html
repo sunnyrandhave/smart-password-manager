@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <h1>SMART PASSWORD MANAGER</h1>
+    </nav>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Login Here</h1>
+        </div>
+        <form id="loginForm">
+            Username: <input type="text" id="username" required><br>
+            
+            Password:
+            <div class="password-container">
+                <input type="password" id="password" required>
+                <span id="togglePassword" class="toggle-password">👁️</span>
+            </div>
+            
+            <button type="submit" id="btn">Log in</button>
+            <p id="data"></p>
+
+            <div class="reg">
+                <p>Not Registered? </p> <a href="signup.html">Register</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

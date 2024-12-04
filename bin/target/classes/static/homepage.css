@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url("3334896.jpg");
+    background-size: cover;
+
+    /* background-color: black; */
+    color: white;
+}
+
+#heading{
+    justify-content: center;
+    text-align: center;
+}
+ 
+nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: oblique;
+}
+
+button {
+    display: none;
+  }
+  
+table{
+    border: 2px solid black;
+}

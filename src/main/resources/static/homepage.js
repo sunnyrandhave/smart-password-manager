@@ -132,7 +132,7 @@ function editEntry(index) {
 
     row.querySelector("button.btn-primary").textContent = "Save";
     row.querySelector("button.btn-primary").onclick = () => saveEntry(index);
-    // row.querySelector("button.btn-primary").onclick = () => console.log(serverData);
+    row.querySelector("button.btn-primary").onclick = () => console.log(serverData);
 }
 
 async function saveEntry(index) {
@@ -200,3 +200,10 @@ function deleteEntry(index) {
     .catch(error => console.error("Error deleting entry:", error));
 }
 
+
+let btn = document.getElementById("dwn-btn");
+
+btn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("Button Was Clicked");
+})
