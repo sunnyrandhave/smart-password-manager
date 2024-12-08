@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const tableBody = document.getElementById("table-body");
         tableBody.innerHTML = "";
 
-        // Check if the data is empty
         if (Object.keys(data).length === 0) {
             tableBody.innerHTML = `<tr><td colspan="5">No passwords found for this user.</td></tr>`;
             return;

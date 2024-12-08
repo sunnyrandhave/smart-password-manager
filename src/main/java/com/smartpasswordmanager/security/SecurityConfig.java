@@ -11,14 +11,16 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
                 .csrf().disable()
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/user/login", "/user/register").permitAll() // Use double quotes here
-                        .anyRequest().authenticated()
+                .authorizeRequests(auth -> auth
+                        .requestMatchers("/user/login", "/user/register").permitAll() // Allow login and register page without authentication
+                        .anyRequest().authenticated() // Require authentication for other pages
                 )
-                .formLogin()
-                .and()
-                .httpBasic();
+                .formLogin(form -> form
+                        .loginPage("/login.html") // Use your custom login page
+                        .permitAll()
+                        .defaultSuccessUrl("/homepage.html", true) // Redirect to homepage after successful login
+                )
+                .httpBasic(); // This allows HTTP Basic Auth as well, but might not be needed if using form login
         return httpSecurity.build();
     }
-
 }

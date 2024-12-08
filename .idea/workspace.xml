@@ -5,7 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f9c5d71-db4d-44c1-9f47-8a6147117f72" name="Changes" comment="removing application.properties">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/utils/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/utils/PasswordUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/SmartPasswordManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/SmartPasswordManagerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllerAdvice/ErrorInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllerAdvice/ErrorInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllerAdvice/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllerAdvice/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/entity/Password.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/entity/Password.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/MailAlreadyRegisteredException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/MailAlreadyRegisteredException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/PasswordNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/PasswordNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/UserNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/exception/UserNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/repository/PasswordRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/repository/PasswordRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733640269016</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="removing application.properties">
+      <option name="closed" value="true" />
+      <created>1733653458910</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733653458910</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

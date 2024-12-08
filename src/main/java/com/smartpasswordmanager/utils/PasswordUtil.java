@@ -18,13 +18,14 @@ public class PasswordUtil {
     }
 
 //    public static void main(String[] args) {
-//        String password = "mySecret123";
-//        String hashedPassword = hashPassword(password);
+//        PasswordUtil obj = new PasswordUtil();
+//        String password = "test";
+//        String hashedPassword = obj.hashPassword(password);
 //
 //        System.out.println("Hashed Password: " + hashedPassword);
 //
 //        // Check if password matches
-//        boolean isMatch = verifyPassword("mySecret123", hashedPassword);
+//        boolean isMatch = obj.verifyPassword("test", hashedPassword);
 //        System.out.println("Password Match: " + isMatch);
 //    }
 }

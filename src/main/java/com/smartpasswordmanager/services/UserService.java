@@ -43,14 +43,15 @@ public class UserService {
 
     public User loginUser(String username, String password) throws UserNotFoundException {
         User user = userRepository.findByuserName(username);
-        user.setLastLoginAt(LocalDateTime.now());
-        userRepository.save(user);
-        if (user!=null && passwordUtil.verifyPassword(password,user.getUserPassword())){
+        if (user != null && passwordUtil.verifyPassword(password, user.getUserPassword())) {
+            user.setLastLoginAt(LocalDateTime.now());
+            userRepository.save(user);
             return user;
-        }else {
-            throw new UserNotFoundException("User Not Found!");
+        } else {
+            throw new UserNotFoundException("User Not Found or Invalid Password!");
         }
     }
+
 
 
 

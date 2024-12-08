@@ -34,10 +34,10 @@ public class UserController {
         if (user != null) {
             map.put("message","login Successfull!");
             map.put("user",user);
-            return ResponseEntity.ok(map); // Send user details if login is successful
+            return ResponseEntity.ok(map); // Sending user details if login is successful!
         }
         map.put("message","Invalid credentials.!");
-        return ResponseEntity.status(401).body(map); // Unauthorized if login fails
+        return ResponseEntity.status(401).body(map);
     }
 
 
