@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f9c5d71-db4d-44c1-9f47-8a6147117f72" name="Changes" comment="removing application.properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/PasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/PasswordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/utils/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/smartpasswordmanager/utils/UserPasswordUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/utils/PasswordUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/smartpasswordmanager/utils/PasswordUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
