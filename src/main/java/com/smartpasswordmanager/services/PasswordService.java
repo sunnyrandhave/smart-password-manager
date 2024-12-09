@@ -7,7 +7,7 @@ import com.smartpasswordmanager.exception.PasswordNotFoundException;
 import com.smartpasswordmanager.exception.UserNotFoundException;
 import com.smartpasswordmanager.repository.PasswordRepository;
 import com.smartpasswordmanager.repository.UserRepository;
-import com.smartpasswordmanager.utils.PasswordUtil;
+import com.smartpasswordmanager.utils.UserPasswordUtil;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,7 +27,7 @@ public class PasswordService {
     private PasswordRepository passwordRepository;
     @Autowired
     private UserRepository userRepository;
-    private PasswordUtil passwordUtil;
+    private UserPasswordUtil userPasswordUtil;
 
     public Password addNewPassword(int userId, Password password) throws Exception {
         User user = userRepository.findById(userId).orElseThrow(()->new UserNotFoundException("User Not Found!"));

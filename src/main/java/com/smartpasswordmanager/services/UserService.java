@@ -4,7 +4,7 @@ import com.smartpasswordmanager.entity.User;
 import com.smartpasswordmanager.exception.MailAlreadyRegisteredException;
 import com.smartpasswordmanager.exception.UserNotFoundException;
 import com.smartpasswordmanager.repository.UserRepository;
-import com.smartpasswordmanager.utils.PasswordUtil;
+import com.smartpasswordmanager.utils.UserPasswordUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -21,7 +21,7 @@ public class UserService {
     @Autowired
     private JavaMailSender javaMailSender;
     @Autowired
-    private PasswordUtil passwordUtil;
+    private UserPasswordUtil userPasswordUtil;
 
     public void RegisterUser(@RequestBody User user) throws Exception{
         Optional<User> optionalUser = Optional.ofNullable(userRepository.findByuserMail(user.getUserMail()));
@@ -32,7 +32,7 @@ public class UserService {
             String subject = String.format("Welcome %s!",user.getUserName());
             String mailbody = String.format("Hello! "+user.getUserName()+" thank you for registering on Smart Password Manager. Enjoy our hassle-free Smart Password Manager to manage all secured passwords and download passwords anytime.\nUser-Name:"+user.getUserName()+"\nUser-password:"+user.getUserPassword());
             user.setCreatedAt(LocalDateTime.now());
-            user.setUserPassword(passwordUtil.hashPassword(user.getUserPassword()));
+            user.setUserPassword(userPasswordUtil.hashPassword(user.getUserPassword()));
             userRepository.save(user);
             simpleMailMessage.setTo(user.getUserMail());
             simpleMailMessage.setSubject(subject);
@@ -43,7 +43,7 @@ public class UserService {
 
     public User loginUser(String username, String password) throws UserNotFoundException {
         User user = userRepository.findByuserName(username);
-        if (user != null && passwordUtil.verifyPassword(password, user.getUserPassword())) {
+        if (user != null && userPasswordUtil.verifyPassword(password, user.getUserPassword())) {
             user.setLastLoginAt(LocalDateTime.now());
             userRepository.save(user);
             return user;

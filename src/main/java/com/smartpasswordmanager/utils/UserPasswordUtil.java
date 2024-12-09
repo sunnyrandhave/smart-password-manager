@@ -4,7 +4,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PasswordUtil {
+public class UserPasswordUtil {
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
     // Hashing the password
@@ -19,13 +19,13 @@ public class PasswordUtil {
 
 //    public static void main(String[] args) {
 //        PasswordUtil obj = new PasswordUtil();
-//        String password = "test";
+//        String password = "sam@randhave1";
 //        String hashedPassword = obj.hashPassword(password);
 //
 //        System.out.println("Hashed Password: " + hashedPassword);
 //
 //        // Check if password matches
-//        boolean isMatch = obj.verifyPassword("test", hashedPassword);
+//        boolean isMatch = obj.verifyPassword("sam@randhave1", hashedPassword);
 //        System.out.println("Password Match: " + isMatch);
 //    }
 }
